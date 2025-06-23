@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   gameArea.appendChild(dollImage);
 
   let playerPosition = 10;
+  let isWatching = true;
 
   startBtn.addEventListener("click", () => {
     const gameAudio = document.createElement("audio");
@@ -21,9 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
       dollImage.src = "./assets/doll-back.png";
+      isWatching = false;
 
       setTimeout(() => {
         dollImage.src = "./assets/doll-front.png";
+        isWatching = true;
       }, backwardFace);
     }, forwardFace * 1000);
 
@@ -39,13 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gameArea.appendChild(playerImage);
 
-    // gameAudio.play();
+    gameAudio.play();
   });
 
   document.addEventListener("keydown", (event) => {
     if (event.code === "ArrowUp") {
-      playerPosition = playerPosition + 10;
-      playerImage.style.bottom = `${playerPosition}px`;
+      if (isWatching) {
+        alert("Game Over!");
+      } else {
+        playerPosition = playerPosition + 10;
+        playerImage.style.bottom = `${playerPosition}px`;
+      }
     }
   });
 });
