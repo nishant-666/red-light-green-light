@@ -4,11 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const dollImage = document.createElement("img");
   const playerImage = document.createElement("img");
+  const finishLine = document.createElement("div");
+
+  finishLine.style.backgroundColor = "white";
+  finishLine.style.width = "700px";
+  finishLine.style.height = "2px";
+  finishLine.style.left = "50%";
+  finishLine.style.bottom = "600px";
+  finishLine.style.transform = `translate(-50%, 0)`;
+  finishLine.style.position = "absolute";
 
   dollImage.src = "./assets/doll-front.png";
 
   dollImage.width = 150;
 
+  gameArea.appendChild(finishLine);
   gameArea.appendChild(dollImage);
 
   let playerPosition = 10;
