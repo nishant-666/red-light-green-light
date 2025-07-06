@@ -26,9 +26,7 @@ A playable browser-based version of the iconic **Red Light, Green Light** game f
 
 ✅ Classic *Red Light, Green Light* mechanics  
 ✅ Simple character movement  
-✅ Randomized light timing  
 ✅ "Caught moving" detection  
-✅ Responsive design for desktop and mobile
 
 ---
 
