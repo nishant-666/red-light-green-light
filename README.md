@@ -2,11 +2,6 @@
 
 A playable browser-based version of the iconic **Red Light, Green Light** game from Netflix's *Squid Game*, built using **vanilla HTML, CSS, and JavaScript**.
 
-![screenshot](./preview.png) <!-- Replace with your actual screenshot file path -->
-
-## 🎮 Demo
-
-🔗 **Live Demo:** [Click here to play](https://your-live-demo-link.com)  
 📂 **Source Code:** Available in this repository
 
 ---
